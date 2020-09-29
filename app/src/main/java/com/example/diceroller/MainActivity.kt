@@ -4,11 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import java.util.*
 import kotlin.random.Random
-import kotlin.random.Random.Default.nextInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             rollDice()
         }
 
-        diceImage = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.image_dice)
     }
 
 
