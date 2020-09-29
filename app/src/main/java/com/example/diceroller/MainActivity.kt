@@ -8,7 +8,7 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var diceImage: ImageView
+    lateinit var imageDice: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             rollDice()
         }
 
-        diceImage = findViewById(R.id.image_dice)
+        imageDice = findViewById(R.id.image_dice)
     }
 
 
@@ -36,6 +36,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
-        diceImage.setImageResource(imageResource)
+        imageDice.setImageResource(imageResource)
     }
 }
